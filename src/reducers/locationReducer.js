@@ -6,7 +6,8 @@ const initialState = {
 
 export default function (state = initialState, action){
 	switch(action.type){
-		case GET_LOCATIONS: 
+		case GET_LOCATIONS:
+			console.log('reducers') 
 			return {
 				...state,
 				locations:action.payload
