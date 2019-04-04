@@ -7,7 +7,6 @@ class Home extends Component {
 			'San Diego' , 'San Francisco', 'Oklahoma City'
 		]
 	}
-
 	render(){
 		const titles = this.state.title; 
 		return (
@@ -15,7 +14,7 @@ class Home extends Component {
 				<h1>Location </h1>
 				<div className = "row">
 					<div className = "col-lg-9">
-						<input type="text" class="form-control" id="usr" placeholder = "Search for the location" />
+						<input type="text" class="form-control" placeholder = "Search for the location" />
 					</div>
 				</div>
 				<hr />

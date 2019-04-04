@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 import Home from './components/Home'
+import Location from './components/Location'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path = "/" component = {Home} />
+            <Route exact path = "/location" component = {Location} />
           </Switch>
         </Router>
       </div>
