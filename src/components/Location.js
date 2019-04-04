@@ -2,7 +2,7 @@ import React, {Component } from 'react'
 
 import {connect} from 'react-redux'
 import {getLocation} from '../actions/locationActions'
-
+import {Link} from 'react-router-dom'
 
 class Location extends Component {
 	constructor(props)
@@ -29,6 +29,14 @@ class Location extends Component {
 						    <h3>{id} : {title}</h3>	 
 						    {type} <br />{long} 
 						  </div>
+						</div>
+
+						<div>
+							<Link to="/">  
+								<button type="button" className="btn btn-outline-success">
+									Home
+								</button>
+							</Link>
 						</div>
 						
 					</div>
