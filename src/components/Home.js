@@ -40,7 +40,9 @@ class Home extends Component {
 				</div>
 				<hr />
 				<div className = "row">
-					<div className = "col-lg-9">
+					<div className = "col-lg-3">
+					</div>
+					<div className = "col-lg-6">
 						{locatns.map(local => (
 							<div class="card">
 							  <div class="card-body">
@@ -48,6 +50,8 @@ class Home extends Component {
 							  </div>
 							</div>
 						))}	
+					</div>
+					<div className = "col-lg-3">
 					</div>
 				</div>
 			</div>
