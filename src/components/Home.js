@@ -10,13 +10,14 @@ class Home extends Component {
 	{
 		super(props);
 		this.state = {
-			'locations' : []
+			'locations' : [],
+			'search': ""
 		}
 
 	}
 	
-	onChange() {
-		this.props.getLocation()
+	onChange(event) {
+		this.props.getLocation(event.target.value)
 		this.setState(({
 			locations: this.props.loc
 		}))
@@ -29,7 +30,7 @@ class Home extends Component {
 				<h1>Location </h1>
 				<div className = "row">
 					<div className = "col-lg-9">
-						<input type="text" class="form-control" placeholder = "Search for the location" onChange = {() => this.onChange()} />
+						<input type="text" class="form-control"  placeholder = "Search for the location" onChange = {this.onChange.bind(this)} />
 					</div>
 				</div>
 				<hr />

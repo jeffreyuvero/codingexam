@@ -1,8 +1,8 @@
 import {GET_LOCATIONS } from './types'
 import axios from 'axios'
 
-export const getLocation = () => async dispatch => {
-	const res = await axios.get(`https://www.metaweather.com/api/location/search/?query=san`)
+export const getLocation = (params) => async dispatch => {
+	const res = await axios.get(`https://www.metaweather.com/api/location/search/?query=` + params)
 	.then(
         res => {
         	dispatch({
